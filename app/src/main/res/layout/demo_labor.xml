@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="2.09">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/reporttextinput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/reportedt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Report Title"/>
+                </android.support.design.widget.TextInputLayout>
+                <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:id="@+id/workplacetextinput"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="10dp">-->
+
+                <!--<EditText-->
+                <!--android:id="@+id/workplaceedt"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+
+                <!--android:hint="Enter Work Place"/>-->
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Select Report Date"
+                    android:gravity="center"
+                    android:background="@drawable/textborder"
+                    android:id="@+id/datetxtview"
+                    />
+
+                <Spinner
+                    android:id="@+id/constructor_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="24dp"
+                    android:padding="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/textborder"
+                    android:textColor="@color/white" />
+
+
+                <Spinner
+                    android:id="@+id/labor_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:padding="13dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/title"
+                    android:background="@drawable/textborder"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/dynamic_ln"
+                    >
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/areatextinput"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp">
+
+                        <EditText
+                            android:id="@+id/area_edt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Enter Area"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Spinner
+                        android:id="@+id/size_spinner"
+                        android:layout_width="0dp"
+                        android:padding="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textborder"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:background="@drawable/textborder"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <Switch
+                        android:id="@+id/simpleSwitch"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.5"
+                        android:checked="false"
+                        android:text="Day Shift"
+                        android:textOff="Day"
+                        android:textOn="Night"
+                        android:textSize="18sp"
+                        android:thumb="@drawable/customswitchselector"
+                        android:track="@drawable/custom_track" />
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:text="Night Shift"/>
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/descrtextinput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/desc_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Description"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Attach Image"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:id="@+id/attach_button"
+                    android:onClick="btnAddOnClick"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/attachicon"
+                    android:background="@drawable/textborder"
+                    />
+
+
+                <!--<ImageView-->
+                <!--android:id="@+id/imgview_capture"-->
+                <!--android:layout_width="80dp"-->
+                <!--android:visibility="gone"-->
+                <!--android:layout_height="80dp">-->
+                <!--</ImageView>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/main_list_view"
+                        android:cacheColorHint="@color/colorPrimary">
+                    </ListView>
+
+                </LinearLayout>
+
+
+
+                <Button
+                    android:id="@+id/submit_button"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_custom"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+</ScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/submit_button"
+        app:elevation="4dp"
+        android:layout_margin="16dp"
+        app:fabSize="normal"
+        app:layout_anchorGravity="bottom|end"
+        android:src="@android:drawable/ic_dialog_email" />
+
+</android.support.design.widget.CoordinatorLayout>

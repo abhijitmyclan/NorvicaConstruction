@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ln1"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:id="@+id/svContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+       >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/reporttextinput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/reportedt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Report Title" />
+                </android.support.design.widget.TextInputLayout>
+                <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:id="@+id/workplacetextinput"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_marginTop="10dp">-->
+
+                <!--<EditText-->
+                <!--android:id="@+id/workplaceedt"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+
+                <!--android:hint="Enter Work Place"/>-->
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+                <TextView
+                    android:id="@+id/datetxtview"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/textborder"
+                    android:gravity="center"
+                    android:text="Select Report Date" />
+
+                <Spinner
+                    android:id="@+id/constructor_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/textborder"
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
+
+
+                <Spinner
+                    android:id="@+id/labor_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/textborder"
+                    android:padding="13dp"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/dynamic_ln"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/areatextinput"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/area_edt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Enter Area" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Spinner
+                        android:id="@+id/size_spinner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/textborder"
+                        android:padding="10dp"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="0dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@drawable/textborder"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:padding="5dp">-->
+
+                    <!--<Switch-->
+                        <!--android:id="@+id/simpleSwitch"-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_weight="1.5"-->
+                        <!--android:checked="false"-->
+                        <!--android:text="Day Shift"-->
+                        <!--android:textOff="Day"-->
+                        <!--android:textOn="Night"-->
+                        <!--android:textSize="18sp"-->
+                        <!--android:thumb="@drawable/customswitchselector"-->
+                        <!--android:track="@drawable/custom_track" />-->
+
+                    <!--<TextView-->
+
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_margin="10dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:checked="false"-->
+                        <!--android:text="Night Shift"-->
+                        <!--android:textSize="18sp"-->
+                        <!--android:textStyle="bold" />-->
+                <!--</LinearLayout>-->
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/descrtextinput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/desc_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Description" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <Button
+                        android:id="@+id/attach_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/textborder"
+                        android:clickable="true"
+                        android:drawableLeft="@drawable/attachicon"
+                        android:onClick="btnAddOnClick"
+                        android:text="Attach Image"
+                        android:textAllCaps="false"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ln2"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+
+
+                    <ListView
+                        android:id="@+id/main_list_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="@color/colorPrimary"
+                      android:visibility="gone"
+                       >
+
+                    </ListView>
+
+
+                <Button
+                    android:id="@+id/submit_button"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_custom"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@id/submit_button"
+            app:elevation="4dp"
+            android:layout_margin="16dp"
+            app:fabSize="normal"
+            app:layout_anchorGravity="bottom|end"
+            android:src="@android:drawable/ic_dialog_email" />
+
+</LinearLayout>

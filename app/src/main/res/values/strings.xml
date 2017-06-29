@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">NorvicaConstruction</string>
+    <string name="prompt_email">Username</string>
+    <string name="prompt_password">Password </string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="forgotpassword">Forgot Password? </string>
+    <string name="no_text"> </string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="registration_message">Check your Login details OR Contact your Admin.</string>
+    <string name="error_invalid_email">This Username number is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="pleasewait">Please wait</string>
+
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Connect</item>
+        <item>Fixtures</item>
+        <item>Table</item>
+    </string-array>
+
+
+    <string-array name="imageFor">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+    </string-array>
+</resources>
